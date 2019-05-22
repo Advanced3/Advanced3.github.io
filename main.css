@@ -1,8 +1,13 @@
+body{
+  background-color: #000000;
+  color: #ffffff;
+}
 #about{
   margin-top: 112px;
+  color: #000000;
 }
 #about img{
-  max-width: 300px;
+  max-width: 400px;
 }
 .subheading {
   font-weight: 600;
@@ -10,9 +15,6 @@
 }
 .date {
   min-width: 18rem;
-}
-nav img{
-  max-width: 200px;
 }
 nav{
   background-color: #000000;
@@ -110,6 +112,21 @@ transform: translate3d(0,10px,0);
 transform: translate3d(0,-10px,0);
 }
 
+#experience h2{
+  margin-bottom: 50px;
+}
+
+#experience .row img{
+  max-width: 100%;
+}
+
+#experience{
+  margin-bottom: 100px;
+}
+
+.jumbotron{
+  border-radius: 40px;
+}
 
 @media screen and (max-width: 992px) {
   nav li{

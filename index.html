@@ -8,42 +8,50 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Clarence Taylor</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top navigation">
+    <button class="navbar-toggler navbar-dark collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item text-center animated slideInLeft">
+          <a class="nav-link underline this" href="#about">O mne</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
+        <li class="nav-item text-center animated slideInLeft">
+          <a class="nav-link this" href="#experience">Skúsenosti</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
+        <li class="nav-item text-center animated slideInLeft">
+          <a class="nav-link this" href="#education">Vzdelanie</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
+        <li class="nav-item text-center animated slideInRight">
+          <a class="nav-link this" href="#skills">Zručnosti</a>
+        </li> 
+        <li class="nav-item text-center animated slideInRight">
+          <a class="nav-link this" href="">Záujmy</a>
+        </li> 
+        <li class="nav-item text-center animated slideInRight">
+          <a class="nav-link this" href="#kontakt">Kontakt</a>
+        </li> 
       </ul>
     </div>
+    
   </nav>
 
   <div class="container mt-5">
 
-    <section id="about">
+    <section id="about" class="page-section">
       <div class="jumbotron">
         <h1>Jan Mrkva</h1>
         <div class="subheading">
@@ -60,7 +68,7 @@
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="page-section">
       <h2>Experience</h2>
       <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
         <div>
@@ -109,7 +117,7 @@
       </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="page-section">
       <h2>Education</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sapien ac facilisis efficitur. Integer faucibus
@@ -120,7 +128,7 @@
       </p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="page-section">
       <h2>Skills</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sapien ac facilisis efficitur. Integer faucibus
@@ -131,7 +139,7 @@
       </p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="page-section">
       <h2>Interests</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sapien ac facilisis efficitur. Integer faucibus
@@ -142,7 +150,7 @@
       </p>
     </section>
 
-    <section id="contact">
+    <section class="contact" class="page-section">
       <h2>Contact</h2>
       <form>
         <div class="form-group">
@@ -163,6 +171,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 </body>
 

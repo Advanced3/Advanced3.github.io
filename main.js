@@ -47,18 +47,16 @@ function getWidth() {
 
 $(window).on('resize', function(){
   if(getWidth() <= 750){
-          $('nav ul li').removeClass('animated');
+    $('nav ul li').removeClass('animated');
   }
   else{
-          $('nav ul li').addClass('animated');
+    $('nav ul li').addClass('animated');
   }
 });
 
 document.addEventListener('DOMContentLoaded', function() {
   if(getWidth() <= 750){
     $('nav ul li').removeClass('animated');
-    var x = document.getElementsByClassName("animacia")[0].getAttribute("data-aos-offset");
-    $(".animacia").attr("data-aos-offset", x - 200);
   }
 });
     

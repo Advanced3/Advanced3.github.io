@@ -53,12 +53,14 @@
 
     <section id="about" class="page-section">
       <div class="jumbotron bg-light">
+        <div class="row">
           <div class="col-xl-12 align-self-center col-sm-12 text-center">
             <h1>Dávid Schmidt</h1>
           </div>
           <div class="col-xl-12 col-sm-12 text-center">
             <img class="img-fluid mx-auto d-block" src="logo.png">
           </div>
+        </div>
         <div class="subheading text-center">
           Hurabanova 37, Trenčín · 0902 265 115 · david.schmidt382001@gmail.com
         </div>
@@ -70,37 +72,51 @@
 
     <section id="experience" class="page-section">
       <h2 class="text-center">Skúsenosti</h2>
-          <div class="subheading"></div>
-            <div class="row">
-              <div class="col-xl-6 col-sm-12 text-center">
-                  <h3 class="text-center">Junior Web Developer</h3>
-              </div>
-              <div class="col-xl-6 col-sm-12 text-center">
-                <img src="code.jpg">
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-xl-6 col-sm-12 text-center align-self-center">
+            <h3 class="text-center">Web Developer</h3>
+            <div class="subheading">Freelance</div>
+            <p class="text-justify">
+              Zabezpečoval som kompletný cyklus výroby web stránky od jeho návrhu, cez programovanie, tvorbu užívateľského rozhrania, nástroje pre správu obsahu až po zabezpečenie bezpečnostných požiadaviek a priebežnej technickej údržby. Mojou primárnou úlohou bolo stránku vytvoriť a po zverejnení stránky veľmi často ju aj technicky udržiavať. 
+            </p>
+          </div>
+          <div class="col-xl-6 col-sm-12 text-center">
+            <img src="code.jpg">
+          </div>
+        </div>
     </section>
 
     <section id="education" class="page-section">
-      <h2>Education</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sapien ac facilisis efficitur. Integer faucibus
-        eros congue arcu volutpat, et consequat lectus placerat. Donec pellentesque turpis sit amet elit rutrum tincidunt.
-        Etiam eget rutrum dolor. Curabitur auctor vel purus in faucibus. Fusce pellentesque eros venenatis, suscipit ex quis,
-        facilisis nunc. In in turpis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dolor mi,
-        rhoncus sed lorem eget, feugiat mattis risus. Praesent nibh velit, dapibus vitae nulla ut, tempus accumsan ipsum.
-      </p>
+      <div class="row">
+        <div class="col-xl-6 col-sm-12 text-center">
+          <img class="rounded" src="education.jpg">
+        </div>
+        <div class="col-xl-6 col-sm-12 text-center align-self-center">
+          <h2 class="text-center">Vzdelanie</h2>
+          <p class="text-justify"> Spočiatku som študoval na Základnej škole na Hutníckej ulici v Spišskej Novej Vsi a momentálne študujem na Technickej akadémii v Spišskej Novej Vsi odbor informačné a sieťové technológie. Vzdelávame sa v rôznych oblastiach a učíme sa o najnovších technológiách, ktoré využívame v každodennom živote.</p>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="page-section">
-      <h2>Skills</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sapien ac facilisis efficitur. Integer faucibus
-        eros congue arcu volutpat, et consequat lectus placerat. Donec pellentesque turpis sit amet elit rutrum tincidunt.
-        Etiam eget rutrum dolor. Curabitur auctor vel purus in faucibus. Fusce pellentesque eros venenatis, suscipit ex quis,
-        facilisis nunc. In in turpis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dolor mi,
-        rhoncus sed lorem eget, feugiat mattis risus. Praesent nibh velit, dapibus vitae nulla ut, tempus accumsan ipsum.
-      </p>
+      <div class="row">
+        <div class="col-xl-6 col-sm-12 text-center align-self-center">
+          <h2 class="text-center">Zručnosti</h2>
+          <p>Ovládam niekoľko programovacích jazykov ako sú:</p>
+          <ul class="text-left">
+            <li>C</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Assembler</li>
+            <li>JavaScript</li>
+            <li>Jquery</li>
+          </ul>
+          <p>Medzi moje ďalšie prednosti patrí znalosť sieťového protokolu TCP/IP a taktiež som držiteľ Cisco CCNA 1 certifikátu.</p>
+        </div>
+        <div class="col-xl-6 col-sm-12 text-center">
+          <img class="rounded" src="skills.jpg">
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="page-section">
@@ -131,6 +147,48 @@
 
   </div>
 
+
+<script>
+  ScrollReveal().reveal('.jumbotron',{
+    origin: 'bottom',
+    duration: 1500,
+    scale: 0.3,
+    mobile: false,
+    reset: false,
+});
+
+  ScrollReveal().reveal('#experience',{
+    origin: 'bottom',
+    distance: '100px',
+    duration: 1500,
+    scale: 0.3,
+    mobile: false,
+    reset: false,
+    viewFactor: 0.3
+});
+
+ScrollReveal().reveal('#education',{
+    origin: 'bottom',
+    distance: '100px',
+    duration: 1500,
+    scale: 0.3,
+    mobile: false,
+    reset: false,
+    viewFactor: 0.4
+});
+
+ScrollReveal().reveal('#skills',{
+    origin: 'bottom',
+    distance: '100px',
+    duration: 1500,
+    scale: 0.3,
+    mobile: false,
+    reset: false,
+    viewFactor: 0.4
+});
+
+
+</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

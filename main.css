@@ -21,7 +21,6 @@ nav{
   max-width: 1920px;
   margin: 0 auto;
 }
-
 nav ul{
   width: 100%;
   margin-left: 0 !important;
@@ -126,6 +125,18 @@ transform: translate3d(0,-10px,0);
 
 .jumbotron{
   border-radius: 40px;
+}
+
+#education{
+  margin-bottom: 100px;
+}
+
+#education .row img{
+  max-width: 100%;
+}
+
+#skills .row img{
+  max-width: 100%;
 }
 
 @media screen and (max-width: 992px) {

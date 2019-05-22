@@ -159,13 +159,13 @@ transform: translate3d(0,-10px,0);
 }
 
 #contact h2{
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 label{
   padding-bottom: 5px;
 }
 #contact input{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #about, #experience, #education, #skills, #interests, #contact{

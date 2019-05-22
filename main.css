@@ -1,5 +1,12 @@
+#about{
+  margin-top: 112px;
+}
+#about img{
+  max-width: 300px;
+}
 .subheading {
   font-weight: 600;
+  margin-bottom: 20px;
 }
 .date {
   min-width: 18rem;

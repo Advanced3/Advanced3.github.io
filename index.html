@@ -8,6 +8,23 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#000000">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -119,29 +136,30 @@
       </div>
     </section>
 
-    <section id="contact" class="page-section">
-      <h2>Interests</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat sapien ac facilisis efficitur. Integer faucibus
-        eros congue arcu volutpat, et consequat lectus placerat. Donec pellentesque turpis sit amet elit rutrum tincidunt.
-        Etiam eget rutrum dolor. Curabitur auctor vel purus in faucibus. Fusce pellentesque eros venenatis, suscipit ex quis,
-        facilisis nunc. In in turpis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dolor mi,
-        rhoncus sed lorem eget, feugiat mattis risus. Praesent nibh velit, dapibus vitae nulla ut, tempus accumsan ipsum.
-      </p>
+    <section id="interests" class="page-section">
+      <div class="row">
+        <div class="col-xl-6 col-sm-12 text-center">
+           <img class="rounded" src="interests.jpg">
+        </div>
+        <div class="col-xl-6 col-sm-12 text-center align-self-center">
+          <h2 class="text-center">Záujmy</h2>
+          <p>Vo voľnom čase sa zaujímam o mobilné techológie, operačný systém Android, baví ma objavovať ako funguje fotografovanie a čo všetko ovlyvňuje výslednú kvalitu fotky. Keď mám toho dosť, tak únik od počítačovej alebo mobilnej obrazovky nachádzam v cyklistike, pri ktorej si môžem zrelaxovať hlavu a paradoxne načerpať novú energiu do života. </p>
+        </div>
+      </div>
     </section>
 
-    <section class="contact" class="page-section">
-      <h2>Contact</h2>
-      <form>
+    <section id="contact" class="page-section">
+      <h2 class="text-center">Kontakt</h2>
+      <form class="text-center">
         <div class="form-group">
           <label for="email">Email:</label>
           <input type="email" class="form-control" id="email" required>
         </div>
         <div class="form-group">
-          <label for="msg">Message:</label>
-          <textarea class="form-control" rows="5" id="msg"></textarea>
+          <label for="msg">Správa:</label>
+          <textarea class="form-control" rows="7" id="msg"></textarea>
         </div>
-        <button type="submit" class="btn btn-dark">Submit</button>
+        <button type="submit" class="btn btn-primary">Odošli</button>
       </form>
     </section>
 
@@ -187,6 +205,15 @@ ScrollReveal().reveal('#skills',{
     viewFactor: 0.4
 });
 
+ScrollReveal().reveal('#interests',{
+    origin: 'bottom',
+    distance: '100px',
+    duration: 1500,
+    scale: 0.3,
+    mobile: false,
+    reset: false,
+    viewFactor: 0.4
+});
 
 </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

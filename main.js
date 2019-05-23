@@ -7,10 +7,34 @@ $(document).ready(function () {
 function handleSubmit(event) {
   event.preventDefault();
 
-  console.log('submit');
+  var msg = $('#msg').val();
+  var meno = $('')
+  var email = $('#email').val();
 
-  
+  var data = {
+    to: "corageosk@gmail.com",
+    subject: "corageo.github.io",
+    body: msg,
+    from: email
+  }
+
+  $.ajax({
+    type: "POST",
+    url: "https://stored.azurewebsites.net/api/mail",
+    headers: {
+      "Authorization": 'Bearer ' + token
+    },
+    data: JSON.stringify(data),
+    contentType: "application/json"
+  })
+    .done(function () {
+      $('.successful').css("display","block");
+    })
+    .fail(function(error) {
+      $('.failed').css("display","block");
+    });
 }
+
 
 
 $(document).ready(function() {

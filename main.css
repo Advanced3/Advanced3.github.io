@@ -172,6 +172,25 @@ label{
   padding-top: 56px !important;
 }
 
+.successful{
+  position: fixed;
+  top: 56px;
+  width: 100%;
+  text-align: center;
+  display: none;
+  opacity: 0;
+}
+
+.failed{
+  position: fixed;
+  top: 56px;
+  width: 100%;
+  text-align: center;
+  display: none;
+  opacity: 0;
+}
+
+
 @media screen and (max-width: 992px) {
   nav li{
     width: 100%;

@@ -8,12 +8,13 @@ function handleSubmit(event) {
   event.preventDefault();
 
   var msg = $('#msg').val();
-  var meno = $('')
+  var meno = $('#meno').val();
+  var priezvisko = $('#priezvisko').val();
   var email = $('#email').val();
 
   var data = {
-    to: "corageosk@gmail.com",
-    subject: "corageo.github.io",
+    to: "david.schmidt382001@gmail.com",
+    subject: ("Kontaktný formulár od " + meno + " " + priezvisko),
     body: msg,
     from: email
   }

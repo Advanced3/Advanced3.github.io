@@ -14,7 +14,7 @@ function handleSubmit(event) {
 
   var data = {
     to: "david.schmidt382001@gmail.com",
-    subject: "Kontaktný formulár od " + meno + " " + priezvisko,
+    subject: meno + " " + priezvisko + " - Kontaktný formulár",
     body: msg,
     from: email
   }
@@ -30,6 +30,7 @@ function handleSubmit(event) {
   })
     .done(function () {
       $('.successful').css("display","block");
+      $('#myForm').trigger("reset");
     })
     .fail(function(error) {
       $('.failed').css("display","block");

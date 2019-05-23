@@ -192,5 +192,16 @@ label{
 @media screen and (max-width: 992px) {
   nav li{
     width: 100%;
+  }
+
 }
+
+@media screen and (max-width: 1200px){
+  #experience img, #skills img{
+    margin-top: 50px;
+  }
+
+  #education h2, #interests h2{
+    margin-top: 50px;
+  }
 }

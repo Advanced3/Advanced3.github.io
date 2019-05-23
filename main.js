@@ -7,14 +7,14 @@ $(document).ready(function () {
 function handleSubmit(event) {
   event.preventDefault();
 
-  var msg = $('#msg').val();
   var meno = $('#meno').val();
   var priezvisko = $('#priezvisko').val();
+  var msg = $('#msg').val();
   var email = $('#email').val();
 
   var data = {
     to: "david.schmidt382001@gmail.com",
-    subject: ("Kontaktný formulár od " + meno + " " + priezvisko),
+    subject: "Kontaktný formulár od " + meno + " " + priezvisko,
     body: msg,
     from: email
   }

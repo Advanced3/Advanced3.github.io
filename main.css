@@ -178,7 +178,6 @@ label{
   width: 100%;
   text-align: center;
   display: none;
-  opacity: 0;
 }
 
 .failed{
@@ -187,7 +186,6 @@ label{
   width: 100%;
   text-align: center;
   display: none;
-  opacity: 0;
 }
 
 
